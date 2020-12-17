@@ -53,7 +53,7 @@ http://www.tooplate.com/view/2099-scenic
 
 
 <!-- MENU -->
-<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+<div class="navbar custom-navbar" role="navigation">
      <div class="container">
 
           <!-- NAVBAR HEADER -->
@@ -74,7 +74,12 @@ http://www.tooplate.com/view/2099-scenic
                     <li><a href="#about" class="smoothScroll">Tutorial</a></li>
                     <li><a href="#team" class="smoothScroll">Our People</a></li>  
                     <li><a href="#contact" class="smoothScroll">Let's talk</a></li>
-                    <li><a href="tutorial.html">IT Beginner Tutorial</a></li>
+                    <li><a href="tutorial.html">IT Beginner Tutorial</a>
+                         <ul class = "sub_menu_tutorial">
+                              <li><a href="Git and Github, Installing">Git and Github</a></li>
+                         </ul>
+                    </li>
+
                </ul>
           </div>
 
@@ -343,211 +348,7 @@ http://www.tooplate.com/view/2099-scenic
      </div>
 </section>
 
-<!-- Tutorial -->
 
-<div id="tutorial" class="section lb">
-     <div class="container">
-          <div class="section-title row text-center">
-               <div class="col-xs-12 col-sm-12 col-md-12">
-                    <small>WELCOME TO IT WORLD</small>
-                    <h3>OUR FIRST TUTORIAL</h3>
-               </div>
-          </div><!-- end title -->
-           <h4>1. Git and Github</h4>
-           <p>FIRST, WE NEED TO UNDERSTAND WHAT ARE GIT AND GITHUB?</p>
-           <div class="project-item">
-                <img src="images/project-image1.jpg" class="img-responsive" alt="Git and Github image">
-           </div>
-
-           <cite>A quick aside: </cite><p>Git and GitHub are not the same thing. 
-                                          Git is an open-source, version control tool created in 2005 by developers working on the Linux operating system; GitHub is a company founded in 2008 that makes tools which integrate with git. 
-                                          You do not need GitHub to use git, but you cannot use GitHub without using git. 
-                                          There are many other alternatives to GitHub, such as GitLab, BitBucket, and “host-your-own” solutions such as gogs and gittea. 
-                                          All of these are referred to in git-speak as “remotes”, and all are completely optional. 
-                                          You do not need to use a remote to use git, but it will make sharing your code with others easier.</p>
-          <br>
-           <cite>Git </cite><p>is an open-source version control system that was started by Linus Torvalds—the same person who created Linux.
-                               When developers create something (an app, for example), they make constant changes to the code, releasing new versions up to and after the first official (non-beta) release.
-                               Version control systems keep these revisions straight, storing the modifications in a central repository. 
-                               This allows developers to easily collaborate, as they can download a new version of the software, make changes, and upload the newest revision. 
-                               Every developer can see these new changes, download them, and contribute.Similarly, people who have nothing to do with the development of a project can still download the files and use them.</p>
-          <br>
-           <cite>GitHub </cite><p>is a code hosting platform for version control and collaboration. 
-                                  It lets you and others work together on projects from anywhere. GitHub is the single largest host for Git repositories, and is the central point of collaboration for millions of developers and projects. 
-                                  A large percentage of all Git repositories are hosted on GitHub, and many open-source projects use it for Git hosting, issue tracking</p>
-          <br>
-           <cite>The difference</cite><p> between Git and Github is that Github is a website while Git is an application. </p>
-           <p><a href="https://www.github.com/" target="_blank">Github</a></p>
-          <br><br>
-          <h4>Sign up for Github</h4>
-          <cite>Click the linnk to go to Github sign up website.</cite><p><a href="https://www.github.com/join" target="_blank"> Github here</a></p>
-          <p>You can see a new Github sign up tab like the picture below: </p>
-          <a href="images/tutorial-image-github.png" class="image-popup">
-               <img src="images/tutorial-image-github.png" class="img-responsive" alt="Github sign up">
-          </a>
-          <br>
-          <p>Then, you can sign up by fill in the blank your USERNAME, EMAIL ADDRESS, AND PASSWORD.</p>
-
-          <br><br>
-          <h4>Installation Git to your PC</h4>
-          <cite>Click the linnk to download Git to your PC.</cite><p><a href="https://git-scm.com/downloads" target="_blank"> Git download here</a></p>
-          <p>Depending on what kinds of your computer, choose the appropriate version: MAC, WINDOWN, OR LINUX?</p>
-          <a href="images/git-download.png" class="image-popup">
-               <img src="images/git-download.png" class="img-responsive" alt="Git download">
-          </a>
-          <br>
-          <cite>After installing both Git and Github, you can tried to use them via Visual Studio Code</cite>
-          <cite>To download Visual Studio Code, click here: </cite><p><a href="https://code.visualstudio.com/" target="_blank"> Visual Studio Code</a></p>
-          <br>
-
-          <h4>2. Basic Level Git And Github Using</h4>
-          <cite>The first thing is to create a repository</cite>
-          <p>In the picture below, you can create a new repository by clicking <cite>New </cite> in the left of your screen</p>
-          <a href="images/repo1.jpg" class="image-popup">
-               <img src="images/repo1.jpg" class="img-responsive" alt="New repo 1">
-          </a>
-          <br>
-          <cite>Then a new screen shows up. Create your repo name followed the syntax reponname.github.io. REMEMBER to add README.md</cite>
-          <a href="images/repo2.png" class="image-popup">
-               <img src="images/repo2.png" class="img-responsive" alt="New repo 2">
-          </a>
-          <br>
-
-          <cite>Next, open the Visual Studio Code to use Git. </cite>
-          <p>Fist, open the <cite>Terminal</cite> on the View </p>
-          <p>Then, register your username and user email which you registered for your Github account:</p>
-          <p style="text-transform: uppercase;">For example, </p><p>my username is abcdef and my gmail is xyzhex@gmail.com</p>
-          <p> I have to register : git config --global user.name "abcdef</p>
-          <p> Then for email : git config --global user.email "xyzhex@gmail.com"</p>
-          <br>
-          <a href="images/config-global.png" class="image-popup">
-               <img src="images/config-global.png" class="img-responsive" alt="Config">
-          </a>
-
-          <br>
-          <p>Then, use <cite>git clone + your github repo link</cite> so that you can use Git to work on your Repo.</p>
-          <p>After creating and working on your file, you probably want to upload all your file to your repo on Github. Then you use those following commands:</p>
-          <cite>git add . to add all the files</cite>
-          <br>
-          <cite>git commit -m " " to create your commit. It should demonstrate what is it!</cite>
-          <br>
-          <cite>git push to push all the files to your Repo</cite>
-          <br>
-          <p>See the picture below: </p>
-          <a href="images/commands.png" class="image-popup">
-               <img src="images/commands.png" class="img-responsive" alt="Command lines">
-          </a>
-          <br>
-
-          <h4>HOW TO RESOLVE THE CONFLICT</h4>
-          <cite>What is conflict?</cite>
-          <p>In the future, if you pursuit IT career, you probably will work as a team. Supposed you are working on your boss's repository. You make your code, upload all your files in your boss's repository but some of your file name is the same as your boss's file names. That is when the conflict happen! The reason is that git cannot detect which file is the one to use since you are having 2 files with the same name. So how to resolve the conflict? </p>
-          <br>
-          <cite>The anwser is GIT PULL COMMAND</cite>
-          <br>
-          <p>The GIT PULL COMMAND is used to fetch and download content from a remote repository and immediately update the local repository to match that content. Merging remote upstream changes into your local repository is a common task in Git-based collaboration work flows.</p>
-          <p>In other words, </p>
-          <p>GIT PULL COMMAND will pull all the files inside your boss's repo back to your computer. Then, you can working on those files, edit them, and finally use 3 command lines I mentioned above to push all the files you want to your boss's repo again.</p>
-          <br>
-          <p>So the syntax is:</p>
-          <br>
-          <cite>git pull FIRST</cite>
-          <cite>git add .</cite>
-          <cite>git commit -m " "</cite>
-          <cite>git push</cite>
-          <a href="images/git-pull.png" class="image-popup">
-               <img src="images/git-pull.png" class="img-responsive" alt="Git Pull">
-          </a>
-
-          <br>
-          <h4>BRANCH</h4>
-          <a href="images/branch-definition.jpg" class="image-popup">
-               <img src="images/branch-definition.jpg" class="img-responsive" alt="Branch Definition">
-          </a>
-          <cite>Definition of Branch: </cite><p>A branch is essentially is a unique set of code changes with a unique name. Each repository can have one or more branches. The main branch — the one where all changes eventually get merged back into, and is called master. This is the official working version of your project, and the one you see when you visit the project repository at github.com/yourname/projectname.</p>
-          <br>
-          <p>Do not mess with the master. If you make changes to the master branch of a group project while other people are also working on it, your on-the-fly changes will ripple out to affect everyone else and very quickly there will be merge conflicts, weeping, rending of garments, and plagues of locusts. It’s that serious.</p>
-          <br>
-          <p>Why is the master so important to not mess with? One word: the master branch is deployable. It is your production code, ready to roll out into the world. The master branch is meant to be stable, and it is the social contract of open source software to never, ever push anything to master that is not tested, or that breaks the build. The entire reason GitHub works is that it is always safe to work from the master.</p>
-          <a href="images/git-branch-map.png" class="image-popup">
-               <img src="images/git-branch-map.png" class="img-responsive" alt="Map">
-          </a>
-
-          <cite>How to create new branch?</cite>
-          <P>First, you must check for any other existing branches. we can view all existing branches by typing “git branch -a” into terminal, which tells git that we want to see ALL the branches in this project, even ones that are not in our local workspace.</P>
-          <br>
-          <a href="images/branch-check.png" class="image-popup">
-               <img src="images/branch-check.png" class="img-responsive" alt="Branch Check">
-          </a>
-          <br>
-          <cite>This returns output you see in the code example below. Its appearance may vary somewhat depending on your OS and terminal application, but the info is ultimately the same. The asterisk next to “master” in the first line of the output indicates that we are currently on that branch. The second line tells us that on our remote, named origin, there is a single branch, also called master. (Remember that our remote is the GitHub repo for this project).</cite>
-          <br>
-          <cite>To create this new branch, type “git checkout -b branchNameHere” (so, in our case, “git checkout -b hello_octo”).</cite>
-          <p>We can also use the git checkout command to toggle back and forth between our two branches. Type “git checkout branchName” to switch to that branch. So, “git checkout master” takes you to master while “git checkout hello_octo” takes you back to hello_octo branch.</p>
-          <br>
-          <a href="images/git-checkout.png" class="image-popup">
-               <img src="images/git-checkout.png" class="img-responsive" alt="Git Checkout">
-          </a>
-          <br><br>
-          <a href="images/git-branch.png" class="image-popup">
-               <img src="images/git-branch.png" class="img-responsive" alt="Git Branch">
-          </a>
-          <br>
-          <p>As you can see in the picture, you now have 2 branches. The question now is after working on your own branch, how could you merge your branch with the master branch???</p>
-          <br>
-          <cite>Very important: when merging, we need to be on the branch that we want to merge to</cite>
-          <p>In this case, since we want to merge from our working branch, where the “hello_octo_world” file exists, to our master branch, we need to be on the master.</p>
-          <br>
-          <p>Once on the master branch, all we have to do is run the merge command. The best way to do this is to type “git merge YOUR_BRANCH -–no-ff" tells git we want to retain all of the commit messages prior to the merge. This will make tracking changes easier in the future</p>
-          <br>
-          <a href="images/git-merge.png" class="image-popup">
-               <img src="images/git-merge.png" class="img-responsive" alt="Git Merge">
-          </a>
-          <br>
-          <p>The last thing is to let GitHub know that we’ve been working with our own branch by using GIT PUSH.</p>
-          <br>
-          <a href="images/git-push-to-merge.png" class="image-popup">
-               <img src="images/git-push-to-merge.png" class="img-responsive" alt="Git Merge to Push">
-          </a>
-          <br>
-          <p>Some cleanup is in order now: since we have successfully merged our hello_octo branch, we no longer need it. To delete a merged branch, use “git branch -d branchName”:</p>
-          <a href="images/git-delete.png" class="image-popup">
-               <img src="images/git-delete.png" class="img-responsive" alt="Git Merge to Push">
-          </a>
-          <br>
-
-          <h4>Tag</h4>
-          <br>
-          <cite>Definition of Tag: </cite><p>Tagging is generally used to capture a point in history. A tag is like a branch that doesn’t change. Unlike branches, tags, after being created, have no further history of commits</p>
-          <br>
-          <cite>Type of tag: </cite><p>Lightweight tag and Annotated tag</p>
-          <br>
-          <a href="images/lightweight.png" class="image-popup">
-               <img src="images/lightweight.png" class="img-responsive" alt="Git Merge to Push">
-          </a>
-          <br><br>
-          <p>First, Create a new folder, then create an empty repository there. Here has created a directory called tutorial</p>
-          <a href="images/repo-empty.png" class="image-popup">
-               <img src="images/repo-empty.png" class="img-responsive" alt="Git Merge to Push">
-          </a>
-          <br><br>
-          <p>Then create a file. In the picture below, it is named myfile.txt</p>
-          <a href="images/create-file.png" class="image-popup">
-               <img src="images/create-file.png" class="img-responsive" alt="Git Merge to Push">
-          </a>
-          <br><br>
-          <cite>Lightweight tag: </cite><p>The syntax is: git tag + tag_name. For instance, the tag_name is "apple", then git tag apple</p>
-          <br>
-          <p>Then use "git log --decorate" in order to display history including tag information.</p>
-          <br><br>
-          <cite>Annotated tag: </cite><p>The syntax is: git tag -a + tag_name. For instance, the tag_name is "apple", then git tag -a apple</p>
-          <br>
-          <cite>Delete tag: </cite><p>Use git tag -d + tag_name. For instance, the tag_name is "apple", then git tag -d apple</p>
-
-          <cite>That's enough for you to work!</cite>
-          <cite>That's enough for you to work!</cite>
-     </div>
-</div>
 
 <!-- FOOTER -->
 <footer>

@@ -20,28 +20,46 @@ html, body {
   height: 100%;
 }
 
+
+
+.d-flex {
+  display: flex!important
+}
+
+.align-items-center{
+  align-items: center!important;
+}
+
+.text-white{
+  color: white;
+}
+
+.section{
+  background-color: black;
+}
+
 /*---------------------------------------
   TYPOGRAPHY              
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
-  font-weight: 300;
+  font-weight: 350;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 200;
   line-height: 50px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
   line-height: 40px;
   margin-top: 0;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 32px;
 }
@@ -53,14 +71,18 @@ h4 {
 }
 
 p {
-  color: #757575;
-  font-size: 16px;
+  color:darksalmon;
+  font-size: 23px;
   font-weight: 300;
   line-height: 29px;
   letter-spacing: 0.5px;
 }
 
-
+cite {
+      font-style: italic;
+      font-size: 26px;
+      color: darkturquoise;
+}
 /*---------------------------------------
   BUTTONS               
 -----------------------------------------*/
@@ -195,7 +217,7 @@ a:hover, a:active, a:focus {
 
 #about, #project,
 #team, #contact, footer {
-  background: #ffffff;
+  background: #fffffff5;
 }
 
 #about,
@@ -327,9 +349,6 @@ a:hover, a:active, a:focus {
 }
 
 @media(min-width:768px) {
-  .custom-navbar {
-    background: 0 0; 
-  }
   .custom-navbar.top-nav-collapse {
     background: #4dc47d;
     padding: 15px 0;
@@ -388,6 +407,10 @@ a:hover, a:active, a:focus {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
   transition: 1s opacity;
+}
+
+.all-page-bar_tutorial {
+  background: url('../images/tutorial-background.jpg') center no-repeat;
 }
 
 
