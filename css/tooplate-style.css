@@ -71,7 +71,6 @@ h4 {
 }
 
 p {
-  color:darksalmon;
   font-size: 23px;
   font-weight: 300;
   line-height: 29px;
@@ -81,8 +80,17 @@ p {
 cite {
       font-style: italic;
       font-size: 26px;
-      color: darkturquoise;
 }
+
+.title-box-2 {
+  margin-bottom: 3rem;
+}
+
+.title-left {
+  font-size: 2rem;
+  position: relative;
+}
+
 /*---------------------------------------
   BUTTONS               
 -----------------------------------------*/
@@ -215,16 +223,17 @@ a:hover, a:active, a:focus {
   background-size: cover !important;
 }
 
-#about, #project,
-#team, #contact, footer {
-  background: #fffffff5;
+#project, #about,
+#team, #contact, #tutorial, footer{
+  background: black;
 }
 
+
 #about,
-#team, #contact {
+#team, #contact, #tutorial {
   padding-top: 100px;
   padding-bottom: 100px;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -413,6 +422,26 @@ a:hover, a:active, a:focus {
   background: url('../images/tutorial-background.jpg') center no-repeat;
 }
 
+.all-page-bar_it_work {
+  background: url('../images/it_work_background_1.jpg') center no-repeat;
+}
+
+.all-page-bar_it_tech {
+  background: url('../images/it_tech.jpg') center no-repeat;
+}
+
+.all-page-bar_it_profile {
+  background: url('../images/profile_background.jpg') center no-repeat;
+}
+
+.all-page-bar_project_idea {
+  background: url('../images/idea_project.jpg') center no-repeat;
+}
+
+
+
+
+
 
 /*---------------------------------------
   ABOUT              
@@ -547,13 +576,48 @@ a:hover, a:active, a:focus {
   opacity: 1;
 }
 
+/*---------------------------------------
+  TUTORIAL            
+-----------------------------------------*/
+
+
+.tutorial-overlay {
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.tutorial-overlay .social-icon {
+  position: relative;
+  top: 45%;
+}
+.tutorial-overlay .social-icon li a {
+  background: #ffffff;
+  color: #191919;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: left;
+}
+
+.tutorial-item:hover .tutorial-overlay {
+  opacity: 1;
+}
 
 /*---------------------------------------
   CONTACT             
 -----------------------------------------*/
 
 #contact {
-  background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/tutorial-background.jpg') 50% 0 repeat-y fixed;
   background-size: cover;
   background-position: center center;
 }
